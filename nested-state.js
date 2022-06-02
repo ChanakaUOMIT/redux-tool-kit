@@ -1,6 +1,8 @@
 const redux = require('redux')
 const createStore = redux.createStore
 const produce = require('immer').produce
+const reduxLogger = require('redux-logger')
+const logger = reduxLogger.createLogger
 
 const initialState = {
   name: 'Chanaka',
